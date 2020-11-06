@@ -1,0 +1,18 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container > div {
+  width: 800px;
+  height: 500px;
+  background-color: lightgreen;
+}
+
+/* Prima città - Dubai */
+
+.container .dubai {
+}
