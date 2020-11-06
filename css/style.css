@@ -12,13 +12,14 @@
   background-color: lightgrey;
   position: relative;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Prova pseudo-class per conferire questa caratteristica solo a determinati div */
 
-.container > div:nth-of-type(odd) {
+/* .container > div:nth-of-type(odd) {
   background-attachment: fixed;
-}
+} */
 
 .city-text {
   text-align: center;
@@ -39,22 +40,32 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+i {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: white;
+  text-shadow: 3px 3px black;
+}
+
 /* Prima città - Dubai */
 
 .container .dubai {
-  background-image: url("https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
+  background-image: url("../img/dubai.jpg");
 }
 
 /* Seconda città - Cuba */
 
 .container .cuba {
-  background-image: url("https://images.unsplash.com/photo-1503192851959-c6da8ac80cff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-image: url("../img/cuba.jpg");
 }
 
 /* Terza città - Bali */
 
 .container .bali {
-  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80");
+  background-image: url("../img/bali.jpg");
 }
 
 /* Quarta città - Kyoto */
@@ -71,4 +82,16 @@
   border-radius: 10px;
   padding: 5px;
   cursor: pointer;
+}
+
+/* Go on top */
+
+.kyoto i {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  font-size: 2em;
+  color: white;
+  text-shadow: 3px 3px black;
 }
