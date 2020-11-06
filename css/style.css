@@ -86,12 +86,27 @@ i {
 
 /* Go on top */
 
-.kyoto i {
+.top {
   position: absolute;
-  top: 40%;
+  top: 0;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
+}
+
+.top i {
   font-size: 2em;
   color: white;
   text-shadow: 3px 3px black;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+/* Problema con hover top arrow */
+
+/* .top i:hover {
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 5px;
+} */
